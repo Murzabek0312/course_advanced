@@ -1,0 +1,39 @@
+server:
+  port: 8888
+
+spring:
+  profiles:
+    active: git
+#---
+#spring:
+#  profiles: native
+#  cloud:
+#    config:
+#      server:
+#        native:
+#          search-locations:
+#            #file://PATH_TO_PROJECT/ms-config-properties/{application}/{profile},
+#            /Users/murzabekmackbook/Documents/ms-config-properties/{application}/{profile},
+#
+#---
+#spring:
+#  profiles: git
+  cloud:
+    config:
+      server:
+        git:
+          default-label: main
+          uri: https://github.com/Murzabek0312/ms-config-properties
+          search-paths:
+            - "/{application}/{profile}"
+          clone-on-start: true
+          basedir: file://Users/murzabekmackbook/Documents/log
+        bootstrap: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+
+
+
