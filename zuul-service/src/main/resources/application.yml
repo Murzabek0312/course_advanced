@@ -21,6 +21,8 @@ zuul:
   routes:
     client-service:
       path: /client/**
-      service-id: client2-service
+      service-id: client-service
+
+
 #  ignored-services: "*"
 
