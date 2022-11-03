@@ -23,19 +23,19 @@ eureka:
 service-book:
   url: http://localhost:8081
 
-book-service:
-  url: http://localhost:8081
-  ribbon:
-    eureka:
-     enabled: true
-    ServerListRefreshInterval: 1000
+#book-service:
+#  url: http://localhost:8081
+#  ribbon:
+#    eureka:
+#     enabled: true
+#    ServerListRefreshInterval: 1000
 
 
 #
-#book-service:
-#  ribbon:
-#    listOfServers: localhost:8082,localhost:8092
-#    eureka:
-#      enabled: true
+book-service:
+  ribbon:
+    listOfServers: localhost:8082,localhost:8092
+    eureka:
+      enabled: true
 
 

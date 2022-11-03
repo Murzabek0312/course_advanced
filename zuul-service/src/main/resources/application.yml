@@ -9,7 +9,13 @@ spring:
       discovery:
         enabled: true
         service-id: config-server
-
+---
+spring:
+  zipkin:
+    baseUrl: http://localhost:9411/
+  sleuth:
+    sampler:
+      probability: 100
 eureka:
   client:
     serviceUrl:
@@ -21,7 +27,9 @@ zuul:
   routes:
     client-service:
       path: /client/**
-      service-id: client-service
+      service-id: client2-service
+#      service-id: client-service
+
 
 
 #  ignored-services: "*"

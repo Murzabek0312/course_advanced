@@ -36,10 +36,6 @@ public class ClientServiceApplication {
     @LoadBalanced
     public RestTemplate loadBalancedRest(){
         return new  RestTemplate();};
-//    @Primary
-//    @Bean
-//    RestTemplate restTemplate() {
-//        return new RestTemplate();
-//    }
+
 
 }

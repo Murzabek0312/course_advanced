@@ -12,6 +12,9 @@
         <option value="$PROJECT_DIR$/zuul-service/pom.xml" />
         <option value="$PROJECT_DIR$/book-service-update/pom.xml" />
         <option value="$PROJECT_DIR$/client2-service/pom.xml" />
+        <option value="$PROJECT_DIR$/creation-book-service/pom.xml" />
+        <option value="$PROJECT_DIR$/check-book-service/pom.xml" />
+        <option value="$PROJECT_DIR$/store-book-service/pom.xml" />
       </list>
     </option>
   </component>
